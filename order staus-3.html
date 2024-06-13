@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Order Status - Electronic Gadgets Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #444;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .status-form {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+        .status-form input[type="text"], .status-form input[type="submit"] {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            max-width: 400px;
+        }
+        .status-form input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .status-form input[type="submit"]:hover {
+            background-color: #555;
+        }
+        .order-status {
+            margin-top: 20px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Electronic Gadgets Shop</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="cart.html">Cart</a>
+        <a href="orders.html">Orders</a>
+        <a href="login.html">Login</a>
+    </nav>
+    <main>
+        <h2>Check Order Status</h2>
+        <div class="status-form">
+            <form action="order_status.html" method="POST">
+                <label for="order-id">Enter your Order ID:</label>
+                <input type="text" id="order-id" name="order_id" required>
+                <input type="submit" value="Check Status">
+            </form>
+        </div>
+        <!-- Example of order status display -->
+        <div class="order-status">
+            <h3>Order Status</h3>
+            <p>Order ID: 123456</p>
+            <p>Status: Shipped</p>
+            <p>Expected Delivery: 2024-06-20</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Electronic Gadgets Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
