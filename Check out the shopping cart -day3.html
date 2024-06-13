@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Electronic Gadgets Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #444;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .total {
+            text-align: right;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .checkout-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            text-align: center;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .checkout-btn:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Categories</a>
+        <a href="#">Cart</a>
+        <a href="#">Orders</a>
+        <a href="#">Login</a>
+    </nav>
+    <main>
+        <h2>Shopping Cart</h2>
+        <form action="process_checkout.php" method="POST">
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Actions</th>
+                </tr>
+                <!-- Example Item -->
+                <tr>
+                    <td>Mobile Phone</td>
+                    <td>$300</td>
+                    <td><input type="number" name="quantity1" value="1" min="1"></td>
+                    <td>$300</td>
+                    <td><button type="button">Remove</button></td>
+                </tr>
+                <!-- More items can be added in a similar manner -->
+            </table>
+            <div class="total">
+                <strong>Total: $300</strong>
+            </div>
+            <button type="submit" class="checkout-btn">Proceed to Checkout</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Electronic Gadgets Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
