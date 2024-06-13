@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #444;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+        main {
+            padding: 20px;
+        }
+        .cart {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+        .cart-item img {
+            max-width: 100px;
+            height: auto;
+        }
+        .cart-item-details {
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+        .cart-item-details h3 {
+            margin: 0;
+        }
+        .cart-item-actions {
+            text-align: right;
+        }
+        .remove-button {
+            background-color: #d9534f;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function removeItem(button) {
+            // Get the cart item div
+            const cartItem = button.parentElement.parentElement;
+            // Remove the cart item from the DOM
+            cartItem.remove();
+            // Optionally, update the cart total or make an AJAX request to update the server
+            updateCartTotal();
+        }
+
+        function updateCartTotal() {
+            // Example function to update the cart total
+            const cartItems = document.getElementsByClassName('cart-i
