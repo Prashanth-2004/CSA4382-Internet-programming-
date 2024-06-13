@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Details - Electronic Gadgets Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #444;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+        .item-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .item-image {
+            flex: 1 1 300px;
+            margin: 10px;
+            text-align: center;
+        }
+        .item-image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .item-info {
+            flex: 2 1 400px;
+            margin: 10px;
+            background-color: white;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .item-info h2 {
+            margin-top: 0;
+        }
+        .item-info p {
+            line-height: 1.5;
+        }
+        .item-info .price {
+            font-size: 1.5em;
+            color: #333;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            border: none;
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .buttons button:hover {
+            background-color: #218838;
+        }
+        .buttons .back-btn {
+            background-color: #007bff;
+        }
+        .buttons .back-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Electronic Gadgets Shop</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Categories</a>
+        <a href="#">Cart</a>
+        <a href="#">Orders</a>
+        <a href="#">Login</a>
+    </nav>
+    <div class="item-details">
+        <div class="item-image">
+            <img src="images/sample-gadget.jpg" alt="Sample Gadget">
+        </div>
+        <div class="item-info">
+            <h2>Sample Gadget</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec justo at sapien bibendum dignissim. Nam ultricies felis a felis tincidunt, a facilisis nunc vehicula.</p>
+            <p class="price">$299.99</p>
+            <div class="buttons">
+                <button>Add to Cart</button>
+                <button class="back-btn">Back to Categories</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Electronic Gadgets Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
