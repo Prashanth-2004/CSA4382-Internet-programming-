@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .category {
+            flex: 0 0 calc(33.33% - 20px);
+            margin: 10px;
+            background-color: white;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .category img {
+            max-width: 100%;
+            height: auto;
+        }
+        .category h2 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Online Shopping Store</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Cart</a>
+        <a href="#">Login</a>
+    </nav>
+    <div class="container">
+        <!-- Example Category -->
+        <div class="category">
+            <img src="images/mobile.jpg" alt="Mobile Phones">
+            <h2>Mobile Phones</h2>
+            <p>Explore the latest mobile phones.</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="category">
+            <img src="images/laptop.jpg" alt="Laptops">
+            <h2>Laptops</h2>
+            <p>Find your perfect laptop.</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="category">
+            <img src="images/headphones.jpg" alt="Headphones">
+            <h2>Headphones</h2>
+            <p>Discover premium sound quality.</p>
+            <button>Add to Cart</button>
+        </div>
+        <!-- Add more categories and products as needed -->
+    </div>
+    <footer>
+        <p>&copy; 2024 Our Online Shopping Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
