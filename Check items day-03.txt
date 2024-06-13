@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Availability - Electronic Gadgets Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #444;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .check-availability {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        .check-availability h2 {
+            margin-top: 0;
+        }
+        .check-availability input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .check-availability input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .check-availability input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Electronic Gadgets Shop</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Categories</a>
+        <a href="#">Cart</a>
+        <a href="#">Orders</a>
+        <a href="#">Login</a>
+    </nav>
+    <main>
+        <div class="check-availability">
+            <h2>Check Item Availability</h2>
+            <form action="check_availability.php" method="post">
+                <input type="text" name="item_name" placeholder="Enter item name or category" required>
+                <input type="submit" value="Check Availability">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Electronic Gadgets Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
